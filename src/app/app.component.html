@@ -1,8 +1,8 @@
 <header>
   <div id="headerElements">
     <a id="primer" href="#">About</a>
-    <a href="#">Education</a>
-    <a href="#">Projects</a>
+    <a href="#historySectionTittle">Education</a>
+    <a href="#projectsSectionTittle">Projects</a>
     <a href="#">Contact</a>
   </div>
   <div class="separator"></div>
@@ -24,7 +24,7 @@
   <h1 id="historySectionTittle">History Education 📓</h1>
   <div class="historySection">
     <div class="education">
-      <h2>Software Development Tecnology</h2>
+      <h2>- Software Development Tecnology</h2>
       <h3>Politécnico Internacional 2020 - 2023</h3>
       <p>Most importantly, make sure that what you're sharing on social media is supported by accurate data and
         research.
@@ -33,7 +33,7 @@
         customers.</p>
     </div>
     <div class="education">
-      <h2>Data Analytics and Big Data Diplomat</h2>
+      <h2>- Data Analytics and Big Data Diplomat</h2>
       <h3>Politécnico Internacional May - 2023</h3>
       <p>Most importantly, make sure that what you're sharing on social media is supported by accurate data and
         research.
@@ -42,7 +42,7 @@
         customers.</p>
     </div>
     <div class="education">
-      <h2>JavaScript Algorithms and Data Structures</h2>
+      <h2>- JavaScript Algorithms and Data Structures</h2>
       <h3>FreeCodeCamp Aug - 2023</h3>
       <p>Most importantly, make sure that what you're sharing on social media is supported by accurate data and
         research.
@@ -51,7 +51,7 @@
         customers.</p>
     </div>
     <div class="education">
-      <h2>Responsive Web Desing</h2>
+      <h2>- Responsive Web Desing</h2>
       <h3>FreeCodeCamp Jul - 2023</h3>
       <p>Most importantly, make sure that what you're sharing on social media is supported by accurate data and
         research.
@@ -60,6 +60,22 @@
         customers.</p>
     </div>
   </div>
+
+  <hr>
+
+  <section id="projects">
+    <h1 id="projectsSectionTittle">My projects 💼</h1>
+    <div class="projectGroup">
+      <div *ngFor="let project of projects" class="project">
+        <img src="{{project.img}}">
+        <h3 class="projectName">{{project.name}}</h3>
+        <p class="description">{{project.description}}</p>
+        <a href="{{project.link}}" target="_blank" class="linkProject">View project</a>
+      </div>
+    </div>
+  </section>
+
+  <hr>
 </main>
 
 <footer></footer>

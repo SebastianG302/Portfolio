@@ -1,14 +1,22 @@
-header{
+/*Aspectos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root {
+    --mi-variable-font: 'Merriweather', serif;
+}
+
+
+
+header {
     display: flex;
     flex-direction: row;
     margin: 60px 60px;
     justify-content: center;
     align-items: center;
     background-color: white;
-
 }
 
-a{
+a {
     font-size: 25px;
     text-decoration: none;
     color: black;
@@ -16,12 +24,13 @@ a{
     border-radius: 30px;
 }
 
-#primer{
+a:hover {
     background-color: #5271FF;
     color: white;
 }
 
-#headerElements{
+
+#headerElements {
     display: flex;
     max-width: 1000px;
     width: 65%;
@@ -29,7 +38,7 @@ a{
 }
 
 
-.separator{
+.separator {
     width: 35%;
     height: 3px;
     border-radius: 15px;
@@ -37,109 +46,205 @@ a{
     margin: 0 auto;
 }
 
-@media (max-width: 1000px){
-    .separator{
+/*Media query*/
+
+@media (max-width: 1000px) {
+    .separator {
         display: none;
     }
 }
 
-@media screen and (max-width: 700px){
-    header{
+@media screen and (max-width: 700px) {
+    header {
         margin: 10px 5px;
     }
-    #headerElements{
-        
-        width: 100vw; /* Ocupa el 100% del ancho de la ventana del navegador */
-        min-width: none !important; /* Sobreescribe el min-width: 600px; */
+
+    #headerElements {
+        width: 100vw;
+        /* Ocupa el 100% del ancho de la ventana del navegador */
+        min-width: none !important;
+        /* Sobreescribe el min-width: 600px; */
     }
-    a{
+
+    a {
         font-size: 17px;
         padding: 8px 13px;
     }
 }
 
-    
 
+/* Main */
 
-main{
+main {
     margin: 50px 150px;
 }
-main .separator{
+
+main .separator {
     float: left;
 }
 
-main h1{
-    font-family: serif;
+main h1 {
+    font-family: var(--mi-variable-font);
     font-size: 100px;
     margin-top: 150px;
     margin-bottom: 20px;
 }
 
-.descriptionAbout{
+.descriptionAbout {
     max-width: 500px;
     line-height: 30px;
     font-size: 20px;
     font-weight: 100;
 }
-   
-.txtName{
+
+.txtName {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-.section{
+.section {
     margin-bottom: 300px;
 }
 
-@media screen and (max-width: 700px){
-    main{
+@media screen and (max-width: 700px) {
+    main {
         margin: 100px 25px;
     }
-    main h1{
+
+    main h1 {
         margin: 50px 0px;
         margin-bottom: 10px;
         font-size: 60px;
     }
-    .txtName{
+
+    .txtName {
         font-size: 25px;
     }
-    .descriptionAbout{
+
+    .descriptionAbout {
         font-size: 18px;
         line-height: 25px;
     }
 
-    
+
+    /*History education section*/
+
+
 }
-#historySectionTittle{
+
+#historySectionTittle {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
     font-size: 50px;
 }
-.historySection{
+
+.historySection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
-.education{
+
+.education {
     margin-top: 80px;
     width: 500px;
 }
-.education h2{
-    font-family: serif;
+
+.education h2 {
+    font-family: var(--mi-variable-font);
     font-size: 25px;
 }
 
-.education h3{
+.education h3 {
     font-weight: 100;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-@media (max-width: 1000px){
-    .education{
+@media (max-width: 1000px) {
+    .education {
         width: 100%;
+        margin-top: 40px;
+    }
+}
 
+
+/*projects section*/
+
+#projectsSectionTittle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0px;
+    font-size: 50px;
+}
+
+.projectGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 40px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Aplica una sombra suave */
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+.projectName {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-family: var(--mi-variable-font);
+}
+
+.description {
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+
+    margin: 0px 20px 10px 20px;
+}
+
+.linkProject {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #5271FF;
+    font-weight: 100;
+}
+
+
+
+
+
+@media (max-width: 400px) {
+    .projectGroup {
+        justify-content: center;
+    }
+
+    #projectsSectionTittle {
+        margin: 80px 0px 0px 0px;
+    }
+
+    .project {
+        margin: 20px 0px;
     }
 }
