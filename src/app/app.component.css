@@ -1,0 +1,145 @@
+header{
+    display: flex;
+    flex-direction: row;
+    margin: 60px 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+
+a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 25px;
+    border-radius: 30px;
+}
+
+#primer{
+    background-color: #5271FF;
+    color: white;
+}
+
+#headerElements{
+    display: flex;
+    max-width: 1000px;
+    width: 65%;
+    justify-content: space-around;
+}
+
+
+.separator{
+    width: 35%;
+    height: 3px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+    .separator{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px){
+    header{
+        margin: 10px 5px;
+    }
+    #headerElements{
+        
+        width: 100vw; /* Ocupa el 100% del ancho de la ventana del navegador */
+        min-width: none !important; /* Sobreescribe el min-width: 600px; */
+    }
+    a{
+        font-size: 17px;
+        padding: 8px 13px;
+    }
+}
+
+    
+
+
+main{
+    margin: 50px 150px;
+}
+main .separator{
+    float: left;
+}
+
+main h1{
+    font-family: serif;
+    font-size: 100px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.descriptionAbout{
+    max-width: 500px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 100;
+}
+   
+.txtName{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section{
+    margin-bottom: 300px;
+}
+
+@media screen and (max-width: 700px){
+    main{
+        margin: 100px 25px;
+    }
+    main h1{
+        margin: 50px 0px;
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+    .txtName{
+        font-size: 25px;
+    }
+    .descriptionAbout{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    
+}
+#historySectionTittle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+.historySection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.education{
+    margin-top: 80px;
+    width: 500px;
+}
+.education h2{
+    font-family: serif;
+    font-size: 25px;
+}
+
+.education h3{
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px){
+    .education{
+        width: 100%;
+
+    }
+}
