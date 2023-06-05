@@ -51,7 +51,7 @@
     <h1 id="projectsSectionTittle">My projects 💼</h1>
     <div class="projectGroup">
       <div *ngFor="let project of projects" class="project">
-        <img src="{{project.img}}">
+        <img src="{{project.img}}" alt="{{project.alt}}">
         <h3 class="projectName">{{project.name}}</h3>
         <p class="description">{{project.description}}</p>
         <a href="{{project.link}}" target="_blank" class="linkProject">View project</a>

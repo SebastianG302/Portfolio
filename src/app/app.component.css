@@ -79,9 +79,7 @@ main {
     margin: 50px 150px;
 }
 
-main .separator {
-    float: left;
-}
+
 
 main h1 {
     font-family: var(--mi-variable-font);
@@ -186,7 +184,7 @@ main h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 100px;
-
+    
 }
 
 .project {
@@ -219,7 +217,6 @@ main h1 {
     font-size: 15px;
     font-weight: 100;
     text-align: center;
-
     margin: 0px 20px 10px 20px;
 }
 
@@ -290,7 +287,7 @@ footer a:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+  
 }
 
 
@@ -312,9 +309,7 @@ footer a:hover{
         height: 200px;
     }
 
-    #logos{
-        margin-top: 0px;
-    }
+
 
     .info{
         text-align: center;
